@@ -1,5 +1,10 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+.diplomata-regular {
+  font-family: "Diplomata", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}body {
+    font-family: "Diplomata", serif;
     line-height: 1.5;
     background-color: #241d16;
     color: #cea978;
@@ -10,4 +15,14 @@ h1{
     text-align: center;
     margin-top: 50px;
     color: #fbdaaf;
+    font-family: "Diplomata", serif;
 }
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    color: #cea978;
+    font-family: 'Times New Roman', Times, serif;
+}
+
