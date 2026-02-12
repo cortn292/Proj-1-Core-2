@@ -6,7 +6,7 @@
 }body {
     font-family: "Diplomata", serif;
     line-height: 1.5;
-    background-color: #241d16;
+    background-color: #191410;
     color: #cea978;
 }
 
@@ -16,13 +16,135 @@ h1{
     margin-top: 50px;
     color: #fbdaaf;
     font-family: "Diplomata", serif;
+    text-shadow: 2px 2px 10px rgba(255, 231, 186, 0.7);
 }
 
-h2{
+h2.Paths {
+    font-size: 2em;
+    text-align: left;
+    margin-top: 20px;
+    color: #cea978;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    
+}
+
+h2.Dream {
     font-size: 2em;
     text-align: center;
     margin-top: 20px;
     color: #cea978;
     font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 0%;
+    right: 45%;
 }
 
+h2.Infinity {
+    font-size: 2em;
+    text-align: right;
+    margin-top:20px;
+    color: #cea978;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+
+a {
+    color: #cea978;
+    text-decoration: none;
+}
+
+h2.Paths:hover{
+transform: translateX(0%) scale(1.3);
+transition: 0.3s ease-out;
+text-shadow: 2px 2px 10px rgba(255, 225, 196, 0.703);
+}
+
+h2.Dream:hover{
+transform: translateX(0%) scale(1.3);
+transition: 0.3s ease-out;
+text-shadow: 2px 2px 10px rgba(255, 225, 196, 0.703);
+}
+
+h2.Infinity:hover{
+transform: translateX(0%) scale(1.3);
+transition: 0.3s ease-out;
+text-shadow: 2px 2px 10px rgba(255, 225, 196, 0.703);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative; 
+}
+
+svg {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;  
+  object-fit: cover;
+}
+
+.flex-container {
+  position: relative;
+  z-index: 100;  
+  height: 100vh; 
+  margin-top: -60px;
+}
+
+.Paths,
+.Dream,
+.Infinity {
+position: relative;
+z-index: 100;
+margin-top: -50px;
+top: 80%
+}
+
+h1{
+ position: relative;
+ z-index: 100;
+}
+
+#First_design {
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  transform-origin: center;
+}
+
+#First_design:hover {
+  transform: translateX(0%) scale(1.5);
+  transition: 0.3s ease-out;
+}
+
+
+#Second_design {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+#Second_design:hover {
+  transform: translateX(0%) scale(1.5);
+  transition: 0.3s ease-out;
+}
+
+#Third_design {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+#Third_design:hover {
+  transform: translateX(0%) scale(1.5);
+  transition: 0.3s ease-out;
+}
+
+svg {
+  transform: translateZ(0); 
+}
