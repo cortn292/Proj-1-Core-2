@@ -59,21 +59,33 @@ a {
 }
 
 h2.Paths:hover{
-transform: translateX(0%) scale(1.3);
-transition: 0.3s ease-out;
-text-shadow: 2px 2px 10px rgba(255, 225, 196, 0.703);
+    transform: translateX(0%) scale(1.3);
+    transition: 0.3s ease-out;
+    text-shadow: 2px 2px 10px rgba(106, 203, 65, 0.703);
+}
+
+h2.Paths:hover a {
+    color: #64b164; 
 }
 
 h2.Dream:hover{
-transform: translateX(0%) scale(1.3);
-transition: 0.3s ease-out;
-text-shadow: 2px 2px 10px rgba(255, 225, 196, 0.703);
+    transform: translateX(0%) scale(1.3);
+    transition: 0.3s ease-out;
+    text-shadow: 2px 2px 10px rgba(54, 76, 237, 0.703);
+}
+
+h2.Dream:hover a {
+    color: #004598; 
 }
 
 h2.Infinity:hover{
-transform: translateX(0%) scale(1.3);
-transition: 0.3s ease-out;
-text-shadow: 2px 2px 10px rgba(255, 225, 196, 0.703);
+    transform: translateX(0%) scale(1.3);
+    transition: 0.3s ease-out;
+    text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.703);
+}
+
+h2.Infinity:hover a {
+    color: #e9d200; 
 }
 
 body {
@@ -148,3 +160,4 @@ h1{
 svg {
   transform: translateZ(0); 
 }
+
