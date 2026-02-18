@@ -103,3 +103,4 @@ document.addEventListener('keydown', (e) => {
     }
     circleContainer.style.transform = `rotate(${currentRotation}deg) scale(${currentScale})`;
 });
+
