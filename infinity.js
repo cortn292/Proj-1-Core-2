@@ -221,17 +221,13 @@ function handleFragmentClick(fragment, text, index) {
         activeFragment.classList.remove('active');
     }
     
-    // Set new active fragment
     fragment.classList.add('active');
     activeFragment = fragment;
     
-    // Display full text in reading pane
     readingText.textContent = text;
     
-    // Scatter nearby fragments
     scatterNearbyFragments(fragment);
     
-    // After reading, scatter this fragment too
     setTimeout(() => {
         scatterFragment(fragment);
         fragment.classList.remove('active');

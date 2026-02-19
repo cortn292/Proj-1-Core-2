@@ -246,7 +246,6 @@ main { position: relative; z-index: 1; }
   animation: paraReveal 1.4s ease forwards;
 }
 
-/* Lane A — stagger every 0.28s */
 .lane-a p:nth-child(1)  { animation-delay: 6.0s;  }
 .lane-a p:nth-child(2)  { animation-delay: 6.28s; }
 .lane-a p:nth-child(3)  { animation-delay: 6.56s; }
@@ -268,7 +267,6 @@ main { position: relative; z-index: 1; }
 .lane-a p:nth-child(19) { animation-delay: 11.04s; }
 .lane-a p:nth-child(20) { animation-delay: 11.32s; }
 
-/* Lane B — offset +0.14s */
 .lane-b p:nth-child(1)  { animation-delay: 6.14s; }
 .lane-b p:nth-child(2)  { animation-delay: 6.42s; }
 .lane-b p:nth-child(3)  { animation-delay: 6.70s; }
@@ -290,7 +288,6 @@ main { position: relative; z-index: 1; }
 .lane-b p:nth-child(19) { animation-delay: 11.18s; }
 .lane-b p:nth-child(20) { animation-delay: 11.46s; }
 
-/* Lane C — offset +0.28s */
 .lane-c p:nth-child(1)  { animation-delay: 6.28s; }
 .lane-c p:nth-child(2)  { animation-delay: 6.56s; }
 .lane-c p:nth-child(3)  { animation-delay: 6.84s; }
