@@ -16,7 +16,6 @@ body {
   background-color: var(--forest-bg);
   font-family: 'Cormorant Garamond', serif;
   overflow-x: hidden;
-  cursor: crosshair;
 }
 
 body::before {
