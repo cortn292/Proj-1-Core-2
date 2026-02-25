@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Georgia, serif;
+    Background: radial-gradient(circle, #3f5a7b 0%, #000c22 100%);
+    color: #ec0000;
+    overflow: hidden;
+    Height 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
