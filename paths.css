@@ -59,5 +59,24 @@ body::before {
   line-height: 1.2;
 }
 
+.title-block h2 {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  color: var(--lichen);
+  font-size: clamp(0.6rem, 1vw, 0.8rem);
+  letter-spacing: 0.2em;
+}
+
+.nav-hint {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  color: var(--lichen);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-align: right;
+}
+
+
+
 
 
