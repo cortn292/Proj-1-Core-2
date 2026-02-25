@@ -59,3 +59,32 @@ body {
     color: #a89070;
     margin-bottom: 8px;
 }
+
+.instructions {
+    font-size: 0.9em;
+    color: #786850;
+
+}
+
+.reading-pane {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 700px;
+    background: rgba(26, 15, 10, 0.95);
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 196, 168, 0.3);
+    z-index: 100;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.reading-pane p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #d4c4a8;
+    text-align: justify;
+}
