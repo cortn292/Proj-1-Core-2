@@ -7,10 +7,27 @@
 body{
     font-family: Georgia, serif;
     Background: radial-gradient(circle, #3f5a7b 0%, #000c22 100%);
-    color: #ec0000;
+    color: #001056;
     overflow: hidden;
     Height 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.back-button{
+    position: fixed;
+    top: 30px
+    left: 30px;
+    background: rgba(0, 0, 29, 0.9);
+    color: #b8c2ff;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    font-family: Georgia, serif; 
+    font-size: 1em;
+    transition: all 0.3s ease;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+
 }
