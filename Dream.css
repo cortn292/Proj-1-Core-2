@@ -141,3 +141,10 @@ body{
 .text-segment[data-segment="15"] { top: 15%; left: 5%;    transform: rotate(296.8deg); }
 .text-segment[data-segment="16"] { top: 5%;  left: 15%;   transform: rotate(318deg); }
 .text-segment[data-segment="17"] { top: 0;   left: 50%;   transform: translateX(-50%) rotate(339.2deg); }
+
+@media (max-width: 900px) {
+    .circle-container { width: 600px; height: 600px; }
+    .text-segment { width: 220px; font-size: 0.85em; padding: 15px; }
+    .center-info { width: 220px; height: 220px; padding: 20px; }
+    .center-info h1 { font-size: 1.4em; }
+}
