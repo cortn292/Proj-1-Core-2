@@ -38,5 +38,26 @@ body::before {
     linear-gradient(180deg, var(--forest-bg) 0%, var(--forest-mid) 40%, var(--forest-bg) 100%);
 }
 
+.header-fixed {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.title-block h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--sage);
+  font-size: clamp(1rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
 
 
