@@ -87,6 +87,9 @@ main { position: relative; z-index: 1; }
   padding-bottom: 4rem;
 }
 
+.lane { padding: 2rem 2.5rem; position: relative; }
+
+
 
 
 
