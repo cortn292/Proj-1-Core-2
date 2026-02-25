@@ -89,6 +89,20 @@ main { position: relative; z-index: 1; }
 
 .lane { padding: 2rem 2.5rem; position: relative; }
 
+.lane-label {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+.lane-a .lane-label { color: var(--jade); }
+.lane-b .lane-label { color: #74c99a; }
+.lane-c .lane-label { color: #9dd4a8; }
+
+
 
 
 
