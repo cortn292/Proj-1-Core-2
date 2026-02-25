@@ -102,6 +102,23 @@ main { position: relative; z-index: 1; }
 .lane-b .lane-label { color: #74c99a; }
 .lane-c .lane-label { color: #9dd4a8; }
 
+.lane p {
+  font-size: clamp(0.78rem, 1.05vw, 0.92rem);
+  line-height: 1.9;
+  color: var(--sage);
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+
+.lane p.footnote {
+  font-size: clamp(0.62rem, 0.8vw, 0.72rem);
+  color: var(--lichen);
+  font-style: italic;
+  border-top: 1px solid rgba(107,125,90,0.3);
+  padding-top: 1.2em;
+  margin-top: 2em;
+}
+
 
 
 
