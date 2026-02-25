@@ -186,6 +186,25 @@ function createFragments() {
         el.className = 'text-fragment';
         el.textContent = text;
 
-        
+        const x = Math.random() * (window.innerWidth - 300);
+        const y = Math.random() * (window.innerHeight - 250) + 120;
+        el.style.left = x + 'px';
+        el.style.top = y + 'px';
+
+        el.addEventListener('click', () => {
+            readingText.textContent = text;
+        });
+
+        sandContainer.appendChild(el);
+
+        fragments.push({
+            el,
+            x,
+            y,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4
+        });
+    });
+}
 
 
