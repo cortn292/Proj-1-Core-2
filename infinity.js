@@ -207,4 +207,19 @@ function createFragments() {
     });
 }
 
+function drift() {
+    fragments.forEach(f => {
+        f.x += f.vx;
+        f.y += f.vy;
+
+        if (f.x < 0 || f.x > window.innerWidth - 300) f.vx *= -1;
+        if (f.y < 120 || f.y > window.innerHeight - 250) f.vy *= -1;
+
+        f.el.style.left = f.x + 'px';
+        f.el.style.top = f.y + 'px';
+    });
+
+    requestAnimationFrame(drift);
+}
+
 
