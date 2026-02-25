@@ -144,6 +144,10 @@ main { position: relative; z-index: 1; }
   padding: 3rem 6rem 8rem;
   text-align: center;
 }
+.final p {
+  font-family: 'IM Fell English', serif;
+  
+}
 
 
 
