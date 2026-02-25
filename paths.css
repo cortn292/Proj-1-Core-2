@@ -120,6 +120,32 @@ main { position: relative; z-index: 1; }
 }
 
 
+.convergence {
+  grid-column: 1 / -1;
+  padding: 5rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.convergence-text {
+  font-family: 'Playfair Display', serif;
+  color: var(--sage);
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+.convergence-text em { color: var(--lichen); font-style: italic; }
+
+.final {
+  grid-column: 1 / -1;
+  padding: 3rem 6rem 8rem;
+  text-align: center;
+}
+
+
 
 
 
