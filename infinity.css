@@ -33,3 +33,29 @@ body {
     background: rgba(60, 45, 30, 0.95);
     transform: translateX(-5px);
 }
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 100;
+    background: rgba(26, 15, 10, 0.85);
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 196, 168, 0.2);
+}
+
+.header h1 {
+    font-size: 2em;
+    color: #e8d4b8;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #a89070;
+    margin-bottom: 8px;
+}
