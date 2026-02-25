@@ -9,7 +9,7 @@ body{
     Background: radial-gradient(circle, #3f5a7b 0%, #000c22 100%);
     color: #001056;
     overflow: hidden;
-    Height 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
