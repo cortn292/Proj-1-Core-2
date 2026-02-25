@@ -166,7 +166,9 @@ main { position: relative; z-index: 1; }
 }
 .final .back-link:hover { color: var(--sage); border-color: var(--sage); }
 
-
+@media (max-width: 900px) {
+  .timeline-wrapper { grid-template-columns: 1fr; }
+  .timeline-wrapper::before,
 
 
 
