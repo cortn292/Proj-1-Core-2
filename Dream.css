@@ -95,3 +95,31 @@ body{
 .circle-container:active {
     cursor: grabbing;
 }
+
+.text-segment {
+    position: absolute;
+    width: 280px;
+    padding: 20px;
+    background: rgba(24,24,39,0.85);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    font-size: 0.95em;
+    line-height: 1.6;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.text-segment:hover {
+    background: rgba(55,53,146,0.95);
+    border-color: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+    z-index: 5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+}
+
+.text-segment p {
+    margin: 0;
+    color: #c3ccff;
+    text-align: justify;
+}
