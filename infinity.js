@@ -178,5 +178,14 @@ const textFragments = [
 const sandContainer = document.getElementById('sandContainer');
 const readingText = document.getElementById('readingText');
 
-const
+const fragments = [];
+
+function createFragments() {
+    textFragments.forEach(text => {
+         const el = document.createElement('div');
+        el.className = 'text-fragment';
+        el.textContent = text;
+
+        
+
 
