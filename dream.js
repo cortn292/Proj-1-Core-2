@@ -20,6 +20,27 @@ circle.addEventListener('mousedown', function(e) {
     startAngle = angleFromCenter(e.clientX, e.clientY) - rotation;
 });
 
+circle.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    scale += e.deltaY > 0 ? -0.1 : 0.1;
+    scale = Math.min(2, Math.max(0.5, scale));
+    update();
+}, { passive: false });
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') rotation -= 21.2;
+    if (e.key === 'ArrowRight') rotation += 21.2;
+    if (e.key === 'ArrowUp') scale = Math.min(2, scale + 0.1);
+    if (e.key === 'ArrowDown') scale = Math.max(0.5, scale - 0.1);
+    update();
+});
+
+circle.addEventListener('touchstart', function(e) {
+    dragging = true;
+    startAngle = angleFromCenter(e.touches[0].clientX, e.touches[0].clientY) - rotation;
+    e.preventDefault();
+}, { passive: false });
+
   
 
 
