@@ -76,6 +76,16 @@ body::before {
   text-align: right;
 }
 
+main { position: relative; z-index: 1; }
+
+.timeline-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
 
 
 
