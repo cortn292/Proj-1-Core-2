@@ -222,4 +222,7 @@ function drift() {
     requestAnimationFrame(drift);
 }
 
+createFragments();
+drift();
+
 
