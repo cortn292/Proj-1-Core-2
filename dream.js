@@ -1,9 +1,9 @@
-const circleContainer = document.getElementById('circleContainer');
+const circle = document.getElementById('circleContainer');
+
 let dragging = false;
 let rotation = 0;
 let scale = 1;
 let startAngle = 0;
-
 
 
 function angleFromCenter(x, y) {
@@ -18,6 +18,12 @@ function update() {
 }
 
 circle.addEventListener('mousedown', function(e) {
+    dragging = true;
+    startAngle = angleFromCenter(e.clientX, e.clientY) - rotation;
+});
+
+
+circle.addEventListener('mousemove', function(e) {
     if (!dragging) return;
     rotation = angleFromCenter(e.clientX, e.clientY) - startAngle;
     update();
@@ -27,13 +33,6 @@ document.addEventListener('mouseup', function(e) {
     dragging = false;
 });
 
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowLeft') rotation -= 21.2;
-    if (e.key === 'ArrowRight') rotation += 21.2;
-    if (e.key === 'ArrowUp') scale = Math.min(2, scale + 0.1);
-    if (e.key === 'ArrowDown') scale = Math.max(0.5, scale - 0.1);
-    update();
-});
 
 circle.addEventListener('wheel', function(e) {
     e.preventDefault();
@@ -50,9 +49,24 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'ArrowUp') scale = Math.min(2, scale + 0.1);
     if (e.key === 'ArrowDown') scale = Math.max(0.5, scale - 0.1);
     update();
-    }
+});
 
+circle.addEventListener('touchstart', function(e) {
+    dragging = true;
+    startAngle = angleFromCenter(e.touches[0].clientX, e.touches[0].clientY) - rotation;
+    e.preventDefault();
+}, { passive: false });
 
+document.addEventListener('touchmove', function(e) {
+    if (!dragging) return;
+    rotation = angleFromCenter(e.touches[0].clientX, e.touches[0].clientY) - startAngle;
+    update();
+    e.preventDefault();
+}, { passive: false });
+
+document.addEventListener('touchend', function(e) {
+    dragging = false;
+});
 
   
 
