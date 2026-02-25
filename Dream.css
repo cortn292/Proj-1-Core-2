@@ -77,3 +77,21 @@ body{
     color: #646992;
     margin-bottom: 20px;
 }
+
+
+.instructions {
+    font-size: 0.8em;
+    color: #4d41d0;
+    margin-top: 10px;
+}
+
+.circle-container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    cursor: grab;
+}
+
+.circle-container:active {
+    cursor: grabbing;
+}
