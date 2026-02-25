@@ -106,4 +106,14 @@ body {
     color: #c4b498;
     cursor: pointer;
     white-space: nowrap;
-    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+    user-select: none;
+transition: background 0.3 ease, border-color o.3s ease;
+}
+
+.text-fragment:hover {
+    background: rgba(80, 60, 40, 0.9);
+    border-color: rgba(212, 196, 168, 0.6);
+}
