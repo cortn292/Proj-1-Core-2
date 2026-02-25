@@ -96,3 +96,14 @@ body {
     overflow: hidden;
 }
 
+.text-fragment {
+    position: absolute;
+    padding: 8px 14px;
+    background: rgba(60, 45, 30, 0.7);
+    border: 1px solid rgba(212, 196, 168, 0.4);
+    border-radius: 6px;
+    font-size: 0.85em;
+    color: #c4b498;
+    cursor: pointer;
+    white-space: nowrap;
+    
