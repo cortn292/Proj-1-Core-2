@@ -88,3 +88,11 @@ body {
     color: #d4c4a8;
     text-align: justify;
 }
+
+.sand-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
