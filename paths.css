@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
+:root {
+  --sage:       #c8d9b8;
+  --jade:       #4db87a;
+  --moss:       #3a6644;
+  --lichen:     #6b7d5a;
+  --forest-bg:  #060d07;
+  --forest-mid: #0b1a0d;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--forest-bg);
+  font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
+}
 
 
 
