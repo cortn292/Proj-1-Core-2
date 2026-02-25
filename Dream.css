@@ -23,6 +23,7 @@ body{
     color: #b8c2ff;
     text-decoration: none;
     border: 1px solid rgba(255,255,255,0.2);
+    padding: 5px;
     border-radius: 8px;
     font-family: Georgia, serif; 
     font-size: 1em;

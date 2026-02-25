@@ -169,6 +169,10 @@ main { position: relative; z-index: 1; }
 @media (max-width: 900px) {
   .timeline-wrapper { grid-template-columns: 1fr; }
   .timeline-wrapper::before,
+  .timeline-wrapper::after { display: none; }
+  .convergence, .final { padding: 3rem 2rem; }
+  .header-fixed { padding: 1.5rem; }
+}
 
 
 
